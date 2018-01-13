@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Primary Keyword - Secondary Keyword | Brand Name
+    8-foot Green Widgets - Widgets & Tools | Widget World -->
+    <title>Bootstrap4Fun - Examples | amyiruddy.com</title>
+    <!-- CSS Bootstrap | Main | Ion | -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  </head>
+
+  <body>
+  <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light px-5">
+        <a class="navbar-brand" href="#">Fun With Bootstrap</a>
+        <!-- Toggler button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsed portion of Navbar -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jumbotrons">Jumbotrons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carousels">Carousels</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#tables">Tables</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+<!-- End NAV start of MASTHEAD -->
+<div id="wrapper">
+<div id="masthead" class="text-center">
+  <div class="container py-5">
+    <h1 class="display-3 pb-4">Fun with Bootstrap</h1>
+    <p class="lead">Modified Jumbotron Cover</p>
+    <p class="w-75 mx-auto">This is a modified jumbotron that occupies the entire window.
+      Perfect for a single splash page. The flex class centers the content vertically in the window.
+    </p>
+      
+    <div class="text-left border border-info pt-3 pl-2 mx-auto" style="max-width: 400px;">
+      <h2 class="mb-0">CSS</h2>
+<pre><code class="text-light" data-lang="css">
+<span class="text-warning">&num;masthead</span> &lbrace;
+  <span class="text-baby">background-image</span>: <span class="text-warning">url</span>(<span class="text-orange">"img.jpg"</span>);
+  <span class="text-baby">width</span>: <span class="text-lime">100%</span>;
+  <span class="text-baby">height</span>: <span class="text-lime">100%</span>;
+  <span class="text-baby">background-position</span>: <span class="text-lime"><span class="text-orange">center</span></span>;
+  <span class="text-baby">background-repeat</span>: <span class="text-lime"><span class="text-orange">no-repeat</span></span>;
+  <span class="text-baby">background-size</span>: <span class="text-lime"><span class="text-orange">cover</span></span>;
+  <span class="text-baby">color</span>: <span class="text-lime"><span class="text-orange">#fafafa</span></span>;
+  <span class="text-baby">display</span>: <span class="text-lime"><span class="text-orange">flex</span></span>;
+  <span class="text-baby">align-items</span>: <span class="text-lime"><span class="text-orange">center</span></span>;
+  <span class="text-baby">letter-spacing</span>: <span class="text-lime">.1rem</span>;
+  <span class="text-baby">margin-top</span>: <span class="text-lime">100px;</span>;  
+  &rbrace;
+</code></pre>
+    </div>
+        <p class="display-1 mt-5"><i class="icon ion-arrow-down-a"></i></p>   
+      </div>  
+</div> <!-- end of MASTHEAD -->     
+ 
+<!-- Section 2 After COVER | JUMBOTRONS -->
+<section id="jumbotrons" class="pt-5">
+  <div class="container text-center my-5" >
+    <h2 class="display-1">Moving on</h2>
+    <p class="lead">To the two types of Bootstrap Jumbotrons</p>
+  </div>
+
+<!-- Jumbotron 1 -->
+<div class="container">
+    <div class="jumbotron my-5" id=changeJumbotronColor>
+      <p class="display-3">Jumbotron</p>
+      <p class="lead">The jumbotron is used to draw extra attention to featured content or information.</p>
+      <hr class="my-4">
+      <h2>HTML</h2>
+      <div class="text-muted">
+        <p class="mb-0">&lt;div class&equals;&quot;container&quot;&gt;</p>
+        <p class="ml-5 mb-0">&lt;div class&equals;&quot;jumbotron my-5&quot;&gt; <span class="text-success">&#47;&#47;my-5 for extra padding top and bottom</span></p>
+        <p class="ml-5 mb-0">...content goes here</p>
+        <p class="ml-5 mb-0">...content goes here</p>
+        <p class="ml-5 mb-0">...content goes here</p>
+        <p class="ml-5 mb-0">&lt;&sol;div&gt;</p>
+        <p>&lt;&sol;div&gt;</p>
+      </div>
+      <p>Large Jumbotron text is &#60;h1 class&equals;&quot;display-3&quot;&#62;</p>
+      <p>The default background-color for the Jumbotron is &num;E9ECE9. </p>
+      <p>Click the button below to set the .jumbotron class background-color to yellow.</p>
+      <p>
+          <button type="button" class="btn btn-dark"
+          onclick="document.getElementById('changeJumbotronColor').style.background = '#ffc107'">
+            Change BG</button>
+      </p>
+    </div>
+</div>
+<!-- Jumbotron 2 -->
+        
+<div class="jumbotron jumbotron-fluid mb-0">
+    <div class="container">
+      <p class="display-3">Fluid Jumbotron</p>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <div class="text-muted">
+          <p class="mb-0">&lt;div class&equals;&quot;jumbotron-fluid&quot;&gt;</p>
+          <p class="ml-5 mb-0">&lt;div class&equals;&quot;container&quot;&gt; <span class="text-success">&#47;&#47;.container class for margins and padding inside the jumbotron</span></p>
+          <p class="ml-5 mb-0">...content goes here</p>
+          <p class="ml-5 mb-0">...content goes here</p>
+          <p class="ml-5 mb-0">...content goes here</p>
+          <p class="ml-5 mb-0">&lt;&sol;div&gt;</p>
+          <p>&lt;&sol;div&gt;</p>
+      </div>
+    </div>
+</div>
+</section> <!-- End jumbotrons section -->
+
+  <!-- Start Section CAROUSEL -->
+  <section id="carousels">
+    <div class="container-fluid bg-primary" id="carouselIntro">
+      <h3 class="text-light py-5 text-center mb-0">Next we look at the Bootstrap carousel.</h3>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://images.unsplash.com/uploads/141219324227007364f95/be0967a3?dpr=1&auto=compress,format&fit=crop&w=1000&h=&q=80&cs=tinysrgb&crop=" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <p class="h3">Adding captions</p>
+                <p>placed below the img</p>
+                <div class="text-left bg-light mx-auto px-2 text-dark py-2 rounded" style="width: 410px;">
+                  <p class="mb-0">&lt;div class&equals;&quot;carousel-caption d-none d-md-block&quot;&gt;</p>
+                  <p class="ml-2 mb-0">...content goes here</p>
+                  <p class="ml-0">&lt;&sol;div&gt;</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://images.unsplash.com/photo-1428447207228-b396f310848b?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p class="h3">Adding captions</p>
+              <p>placed below the img</p>
+              <div class="text-left bg-light mx-auto px-2 text-dark py-2 rounded" style="width: 410px;">
+                <p class="mb-0">&lt;div class&equals;&quot;carousel-caption d-none d-md-block&quot;&gt;</p>
+                <p class="ml-2 mb-0">...content goes here</p>
+                <p class="ml-0">&lt;&sol;div&gt;</p>
+              </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://images.unsplash.com/photo-1493847242172-d46053a1f671?dpr=1&auto=compress,format&fit=crop&w=1350&h=&q=80&cs=tinysrgb&crop=" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <p class="h3">Adding captions</p>
+              <p>placed below the img</p>
+              <div class="text-left bg-light mx-auto px-2 text-dark py-2 rounded" style="width: 410px;">
+                <p class="mb-0">&lt;div class&equals;&quot;carousel-caption d-none d-md-block&quot;&gt;</p>
+                <p class="ml-2 mb-0">...content goes here</p>
+                <p class="ml-0">&lt;&sol;div&gt;</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+ </section> <!-- End Section CAROUSEL -->   
+
+<!-- TABLES -->
+<section id="tables">     
+    <div class="container-fluid bg-primary">
+        <h4 class="text-light py-5 text-center mb-0 h1">Next - Bootstrap Tables in action.</h4>
+    </div>
+
+    <div class="container my-5">
+    <div class="row" id="pricing">
+      <div class="col-lg-4"> <!-- Column 1 -->
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th class="py-4 bg-primary">BASIC</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>bg-primary</td>
+            </tr>
+            <tr>
+              <td>10 pages</td>
+            </tr>
+            <tr>
+              <td>25 edits per month</td>
+            </tr>
+            <tr>
+              <td><span class="h2">$495</span> <br />setup</td>
+            </tr>
+            <tr>
+              <td><span class="h2">$25</span> <br /> month</td>
+            </tr>
+          </tbody>
+          </table>
+      </div>
+      <div class="col-lg-4"> <!-- Column 2 -->
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th class="py-4 bg-success">SMALL BIZ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>bg-success</td>
+            </tr>
+            <tr>
+              <td>25 pages</td>
+            </tr>
+            <tr>
+              <td>100 edits per month</td>
+            </tr>
+            <tr>
+              <td><span class="h2">$795</span> <br />setup</td>
+            </tr>
+            <tr>
+            <td><span class="h2">$50</span> <br /> month</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-4"> <!-- Column 3 -->
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th class="py-4 bg-info">ENTERPRISE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>bg-info</td>
+            </tr>
+            <tr>
+              <td>25+ pages</td>
+            </tr>
+            <tr>
+              <td>100+ edits per month</td>
+            </tr>
+            <tr>
+              <td><span class="h2">$995</span> <br />setup</td>
+            </tr>
+            <tr>
+            <td><span class="h2">$100</span> <br /> month</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> <!-- end ROW -->
+
+<p class="lead">Each table above in nested inside bootstrap row with class col-md-4. Creating three columns.</p>
+<div class="row" id="table-html-css">
+  <div class="col-md-6 col-sm-12"> <!-- column 1 Table HTML -->
+    <div class="table-styling text-light">
+      <h2>HTML</h2>
+            <!-- Begin <pre> <code> -->
+            <pre><code class="language-html text-light" data-lang="html">
+   <span class="text-primary">&lt;table<span class="text-info"> class</span>=<span class="text-orange">"table text-center"</span>&gt;</span>
+    <span class="text-primary">&lt;thead&gt;</span>
+      <span class="text-primary">&lt;tr&gt;</span>
+        <span class="text-primary">&lt;th<span class="text-info"> class</span>=<span class="text-orange">"py-4 bg-primary"</span>&gt;</span>BASIC<span class="text-primary">&lt;/th&gt;</span>
+      <span class="text-primary">&lt;/tr&gt;</span>
+    <span class="text-primary">&lt;/thead&gt;</span>
+    <span class="text-primary">&lt;tbody&gt;</span>
+      <span class="text-primary">&lt;tr&gt;</span>
+        <span class="text-primary">&lt;td&gt;</span>bg-primary<span class="text-primary">&lt;/td&gt;</span>
+      <span class="text-primary">&lt;/tr&gt;</span>
+    <span class="text-primary">&lt;/tbody&gt;</span> <!-- End tbody -->
+    <span class="text-primary">&lt;tbody&gt;</span>
+      <span class="text-primary">&lt;tr&gt;</span>
+        <span class="text-primary">&lt;td&gt;</span>10 pages<span class="text-primary">&lt;/td&gt;</span>
+      <span class="text-primary">&lt;/tr&gt;</span>
+    <span class="text-primary">&lt;/tbody&gt;
+    ...
+    ...
+  </span></code></pre>
+   </div>  
+  </div> <!-- end col 1 -->
+
+  <div class="col-md-6 col-sm-12"> <!-- column 2 Table CSS -->
+    <div class="table-styling text-light">
+      <h2>CSS</h2>
+      <!-- Begin <pre> <code> -->
+          <pre><code class="text-light" data-lang="css">
+    <span class="text-warning">.table</span> &lbrace;
+        <span class="text-baby">width</span>: <span class="text-lime">100%</span>;
+        <span class="text-baby">margin</span>: <span class="text-lime">0 <span class="text-orange">auto</span></span>;        
+        <span class="text-baby">color</span>: <span class="text-lime"><span class="text-orange">#f5f5f5</span></span>;
+        <span class="text-baby">max-width</span>: <span class="text-lime">350px</span>;
+        <span class="text-baby">min-width</span>: <span class="text-lime">300px</span>;
+        <span class="text-baby">margin-bottom</span>: <span class="text-lime">25px</span>;
+    &rbrace;
+
+    <span class="text-warning">td</span> &lbrace;
+        <span class="text-baby">border-top</span>: <span class="text-lime">1px <span class="text-orange">solid &num;b5b9bd</span></span>;
+    &rbrace;
+
+    <span class="text-warning">th</span> &lbrace;
+        <span class="text-baby">font-size</span>: <span class="text-lime">1.5rem</span>;
+        <span class="text-baby">text-align</span>: <span class="text-lime"><span class="text-orange">center</span></span>;
+        <span class="text-baby">color</span>: <span class="text-lime"><span class="text-orange">#fafafa</span></span>;
+    &rbrace;
+<!-- Leave PRE space for exta padding on the CSS row to be the same height as adjacent HTML column -->
+</code></pre>
+    </div>  
+  </div>
+</div> 
+</div>
+
+<div class="container text-center" id="valid">
+  <div class="jumbotron">
+    <h5 class="h1">Clean Code is important!</h5>
+    <p class="lead">For more info on why code that passes validation is important, visit
+      <a href="https://validator.w3.org/docs/why.html" target="new">w3.org</a>
+    </p>
+    <div class="row">
+      <div class="col-md-4 mx-auto mb-2">
+        <img src="images/validHTML.png" class="img-fluid" alt="screenshot from w3.org, passes validation, no errors, no warnings">
+      </div>
+      <div class="col-md-6 mx-auto">
+        <img src="images/validCSS.png" class="img-fluid" alt="screenshot from w3.org, passes CSS validation, no errors">
+      </div>
+    </div>
+  </div>
+</div>
+
+</section> <!-- End Tables Section -->
+  <!-- FOOTER -->
+  <footer class="footer text-center py-5 mt-5">
+      <div class="container">
+      <span class="text-muted">Bootstrap footer class&equals;text-muted
+        <br /><a href="#">Back to top</a>
+      </span>
+      </div>
+  </footer>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then Font-awesome 
+         Link to main.js file needs to go after jQuery-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/c52eb392b5.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

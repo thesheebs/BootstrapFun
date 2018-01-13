@@ -1,0 +1,140 @@
+// Horizontal gradient, from left to right
+@mixin linearGradient($left, $right){
+    background: $left; /* Old browsers */
+    background: -moz-linear-gradient(left,  $left 0%, $right 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left left, left right, color-stop(0%,$left), color-stop(100%,$right)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  $left 0%,$right 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  $left 0%,$right 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  $left 0%,$right 100%); /* IE10+ */
+    background: linear-gradient(to right,  $left 0%,$right 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+  // Vertical gradient, from top to bottom
+  @mixin horizontalGradient($top, $bottom){
+    background: $left; /* Old browsers */
+    background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, top top, top bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+// Call gradient
+// @include linearGradient(#17a2b8, #34dfc7); 
+// @include horizontalGradient(#17a2b8, #34dfc7); 
+
+// BOOTSTRAP BREAKPOINTS
+// Extra small devices (portrait phones, less than 576px)
+// @media (max-width: 575px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+// @media (max-width: 767px) { ... }
+
+// Medium devices (tablets, less than 992px)
+// @media (max-width: 991px) { ... }
+
+// Large devices (desktops, less than 1200px)
+// @media (max-width: 1199px) { ... }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+// font-family: fontName
+// font-family: fontName
+$serif: 'Lora', serif;
+$sans: 'Raleway', sans-serif;
+
+html,
+body {
+    height: 100%;
+    line-height: 1.5;
+}
+
+
+
+a:hover, a:active {
+    text-decoration: none;
+}
+
+.text-orange {
+    color: #eb7d22;
+}
+
+.text-lime {
+    color: #a2ff99;
+} 
+
+.text-baby {
+    color: #78d0f3;
+}
+
+.text-yellow {
+    color: #f1eb91;
+}
+
+#wrapper {
+   position: relative;
+   top: 50px;
+}
+#masthead {
+    background-image: url("../images/cover1200.jpg");
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fafafa;
+    display: flex;
+    align-items: center;
+    letter-spacing: .1rem;  
+
+    .text-info {
+        color: #ffffff;
+    }
+}
+
+// TABLE
+.table {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    max-width: 350px;
+    min-width: 300px;
+    margin-bottom: 25px;
+
+    td {
+        border-top: 1px solid #b5b9bd; 
+    }
+    
+    th {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fafafa;
+    }     
+}
+
+.table-styling {
+    background-color: #333333;
+    padding: 10px;
+
+    @media screen and (max-width: 768px) {
+     margin-bottom: 25px;
+    }              
+}
+
+//Clean Code Section
+#valid {
+    .jumbotron {
+        background-color: #e9ecef;
+    }
+}
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: #333333;
+}
+

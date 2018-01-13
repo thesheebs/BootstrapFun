@@ -1,0 +1,68 @@
+html,
+body {
+  height: 100%;
+  line-height: 1.5; }
+
+a:hover, a:active {
+  text-decoration: none; }
+
+.text-orange {
+  color: #eb7d22; }
+
+.text-lime {
+  color: #a2ff99; }
+
+.text-baby {
+  color: #78d0f3; }
+
+.text-yellow {
+  color: #f1eb91; }
+
+#wrapper {
+  position: relative;
+  top: 50px; }
+
+#masthead {
+  background-image: url("../images/cover1200.jpg");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fafafa;
+  display: flex;
+  align-items: center;
+  letter-spacing: .1rem; }
+  #masthead .text-info {
+    color: #ffffff; }
+
+.table {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+  max-width: 350px;
+  min-width: 300px;
+  margin-bottom: 25px; }
+  .table td {
+    border-top: 1px solid #b5b9bd; }
+  .table th {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fafafa; }
+
+.table-styling {
+  background-color: #333333;
+  padding: 10px; }
+  @media screen and (max-width: 768px) {
+    .table-styling {
+      margin-bottom: 25px; } }
+
+#valid .jumbotron {
+  background-color: #e9ecef; }
+
+footer {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  background-color: #333333; }
+
+/*# sourceMappingURL=main.css.map */
